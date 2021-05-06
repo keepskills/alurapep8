@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
-from typing import Dict, List, Union
+from typing import Union
 
 from fila_base import FilaBase
 from constantes import CODIGO_PRIORITARIO
