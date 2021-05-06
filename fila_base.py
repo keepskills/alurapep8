@@ -12,9 +12,9 @@ class FilaBase(metaclass=abc.ABCMeta):
 
     def reseta_fila(self) -> None:
         if self.codigo >= TAMANHO_PADRAO_MAXIMO:
-            self.codigo = 0
+            self.codigo = TAMANHO_PADRAO_MINIMO
         else:
-            self.codigo += TAMANHO_PADRAO_MINIMO
+            self.codigo += 1
 
     def inseri_cliente(self):
         self.fila.append(self.senha_atual)
