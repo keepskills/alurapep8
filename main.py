@@ -18,7 +18,7 @@ os.system("cls||clear")
 # print(fila_p.estatistica('10/01/1993', 198, 'detail'))
 
 teste_fabrica = FabricaFila.pega_fila('normal')
-teste_fabrica.atualiza_fila( & ^!  # @)
+teste_fabrica.atualiza_fila()
 teste_fabrica.atualiza_fila()
 teste_fabrica.atualiza_fila()
 print(teste_fabrica.chama_cliente(10))
