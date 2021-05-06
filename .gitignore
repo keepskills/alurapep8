@@ -1,0 +1,15 @@
+# git init; git add -A; git commit -m "first commit"; git branch -M main; git remote add origin https://github.com/keepskills/alurapep8.git; git push -u origin main
+*
+!/.gitignore
+!/.tox.ini
+!/constantes.py
+!/estatistica_detalhada.py
+!/estatistica_resumida.py
+!/fabrica_fila.py
+!/fila_base.py
+!/fila_normal.py
+!/fila_prioritaria.py
+!/LICENSE
+!/main.py
+!/readme.md
+!/temp.py
