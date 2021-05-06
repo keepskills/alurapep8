@@ -9,7 +9,7 @@ from constantes import CODIGO_PRIORITARIO
 from estatistica_resumida import EstatisticaResumida
 from estatistica_detalhada import EstatisticaDetalhada
 
-Clases = Union[EstatisticaResumida, EstatisticaDetalhada]
+Classes = Union[EstatisticaResumida, EstatisticaDetalhada]
 
 
 class FilaPrioritaria(FilaBase):
@@ -22,6 +22,6 @@ class FilaPrioritaria(FilaBase):
         self.clientes_atendidos.append(cliente_atual)
         return f'Cliente atual: {cliente_atual}, dirija-se ao caixa: {caixa}'
 
-    def estatistica(self, retorna_estatistica: Clases) -> dict:
+    def estatistica(self, retorna_estatistica: Classes) -> dict:
 
         return retorna_estatistica.roda_estatistica(self.clientes_atendidos)
