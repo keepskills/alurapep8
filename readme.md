@@ -1,18 +1,21 @@
-Typing Hint
+# Boas práticas de código com PEP8
 
+## Typing Hint
 
-# python.org/dev/peps/pep-0008/#function-and-variable-names
-# python.org/3/library/typing.Union
-git init; git commit -m "first commit"; git branch -M main; git remote add origin git@github.com:keepskills/alurapep8.git; git push -u origin main
+## mypy
 
-Mypy - identação
+```bash
 pip install mypy
+mypy code.py
+```
 
-Usando o flake8 - força identação correta
+## flake8
+
+```bash
 pip install flake8
+```
 
-
-Flake8 para bloquear commit que não estiver no padrão:
+```bash
 https://flake8.pycqa.org/en/latest/user/using-hooks.html
-
-union ajuda a identificar o que um metodo retorna
+https://docs.python.org/3/library/typing.html#typing.Union
+```
