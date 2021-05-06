@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import List, Dict, Union
 
 
 class EstatisticaDetalhada:
@@ -7,4 +7,11 @@ class EstatisticaDetalhada:
         self.agencia = agencia
 
     def roda_estatistica(self, clientes_atendidos: List[str]) -> dict:
-        ...
+        estatistica: Dict[str, Union[List[str], str, int]] = {}
+        estatistica['dia'] = self.dia
+        estatistica['agencia'] = self.agencia
+        estatistica['clientes_atendidos'] = clientes_atendidos
+        estatistica['quantidade_clientes_atendidos'] = (
+            len(clientes_atendidos))
+
+        return estatistica
