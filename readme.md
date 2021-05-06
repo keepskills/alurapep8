@@ -11,11 +11,8 @@ pip install mypy
 Usando o flake8 - força identação correta
 pip install flake8
 
-Para ignorar alguns padroes do flake8 dentro do seu projeto basta criar um arquivo .tox.ini e colocar o que quer ignorar, exemplo:
 
-```ruby
-[flake8]
-ignore = F401,
-```
+Flake8 para bloquear commit que não estiver no padrão:
+https://flake8.pycqa.org/en/latest/user/using-hooks.html
 
 union ajuda a identificar o que um metodo retorna
